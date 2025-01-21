@@ -6,4 +6,4 @@ df = pd.DataFrame({
     "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
 })
 
-print(df.groupby(["Fruit", "City"]).sum())
+print(df.groupby(["Fruit", "City"]).sum().plot(kind='bar'))
